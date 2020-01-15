@@ -7,8 +7,13 @@ function takeANumber(array, name){
 
 function nowServing (array) {
   if (array.length !== 0){
-    let person = array[0]
-    let string = `Currently serving ${person}.`
+    let string = ''
+    for (let i = 0; i < array.length; i++){
+      let person = array[0]
+      string = `Currently serving ${person}.`
+    }
+
+
     return string += nowServing(array.shift)
   } else {
     return "There is nobody waiting to be served!"

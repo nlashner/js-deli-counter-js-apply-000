@@ -25,6 +25,6 @@ if (array.length === 0){
     let name = array[i]
     string += ` ${spot}. ${name},`
   }
-  return string.slice(1)
+  return string.slice(0,-1)
 }
 }

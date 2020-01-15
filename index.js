@@ -10,9 +10,8 @@ function nowServing (array) {
     return "There is nobody waiting to be served!"
   } else {
     let person = array[0]
-    let newArr = array.shift
     let string = `Currently serving ${person}.`
-    return string += nowServing(newArr)
+    return string += nowServing(array.shift)
   }
 }
 

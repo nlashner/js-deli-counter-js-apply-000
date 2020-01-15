@@ -14,3 +14,16 @@ function nowServing (array) {
     nowServing(array.unshift())
   }
 }
+
+function currentLine (array){
+let string = "The line is currently: "
+if (array.length === 0){
+  return "The line is currently empty"
+} else {
+  for (let i = 0; i < array.length; i++){
+    let spot = i + 1
+    let name = array[i]
+    string += `${spot}. ${name},`
+  }
+  return string
+}

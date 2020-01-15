@@ -23,7 +23,7 @@ if (array.length === 0){
   for (let i = 0; i < array.length; i++){
     let spot = i + 1
     let name = array[i]
-    string += `${spot}. ${name},`
+    string += ` ${spot}. ${name},`
   }
   return string
 }

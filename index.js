@@ -16,7 +16,7 @@ function nowServing (array) {
 }
 
 function currentLine (array){
-let string = "The line is currently: "
+let string = "The line is currently:"
 if (array.length === 0){
   return "The line is currently empty."
 } else {

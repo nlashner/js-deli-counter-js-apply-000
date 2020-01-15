@@ -6,12 +6,12 @@ function takeANumber(array, name){
 }
 
 function nowServing (array) {
-  if (array.length === 0){
-    return "There is nobody waiting to be served!"
-  } else {
+  if (array.length !== 0){
     let person = array[0]
     let string = `Currently serving ${person}.`
     return string += nowServing(array.shift)
+  } else {
+    return "There is nobody waiting to be served!"
   }
 }
 

@@ -10,9 +10,8 @@ function nowServing (array) {
     return "There is nobody waiting to be served!"
   } else {
     let person = array[0]
-    let string = `Currently serving ${person}.`
     array.shift()
-    return string
+    return `Currently serving ${person}.`
 }
 
 function currentLine (array){

@@ -11,7 +11,8 @@ function nowServing (array) {
   } else {
     let person = array[0]
     let newArr = array.shift
-    return `Currently serving ${person}.` += nowServing(newArr)
+    let string = `Currently serving ${person}.`
+    return string += nowServing(newArr)
   }
 }
 

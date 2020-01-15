@@ -12,4 +12,5 @@ function nowServing (array) {
     let person = array[0]
     array.shift()
     return `Currently serving ${person}.`
+  }
 }
